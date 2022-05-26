@@ -33,7 +33,7 @@ return (
      
     </div>
           <div className='Main-banner-background'>
-         0
+         
 </div>
 <div className='background-title'>
       

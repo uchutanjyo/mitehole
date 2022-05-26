@@ -5,7 +5,7 @@ import Paragraph from './components/Paragraph'
 
 const About = () => {
   return (
-<Main>
+<div className="main-player">
       <h1 className='header'>About Mite</h1>
 
       
@@ -33,7 +33,7 @@ other projects:
    
         <img src="https://f4.bcbits.com/img/0026884514_10.jpg"className="portrait" />
   
-  </Main>
+        </div> 
   );
 };
 

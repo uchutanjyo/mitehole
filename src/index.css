@@ -240,6 +240,7 @@ padding: 1em;
 
 .album img {
     max-width: 15em;
+
     cursor: pointer;
     border-radius: 5%;
 }
@@ -249,6 +250,12 @@ padding: 1em;
     padding: 1em;
    
 
+}
+
+/* Contact */
+
+.contactemail {
+  font-size: 2em
 }
 
 /* Button */
@@ -394,6 +401,7 @@ padding-bottom: 1em;
     top: -25px;
     display: flex;
     justify-content: space-between;
+    font-size: .8em;
   }
   
   /* Controls */
@@ -425,3 +433,97 @@ justify-content: center;
 #next {
     margin-left: 1em;
 }
+
+
+
+
+@media screen and (max-width: 1060px) {
+    .Nav {
+        top:0;
+         min-width: 100vw;
+          max-width: 100vw;
+max-height: 1vh;
+    }
+
+    .Nav a {
+      font-size: 1em;
+    }
+
+    .Main-banner-background{
+      min-height: 3vh;
+      height: 3em;
+    }
+
+    .background-title {
+      margin-top: 3em;
+      transform: rotate(20deg); 
+     min-height: 5em
+    }
+
+    .album img {
+      width: 10em;
+    }
+
+    .albums {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .portrait {
+      width: 5em;
+    }
+    .about {
+      flex-direction: column;
+    }
+    .about div {
+      margin-bottom: 1em;
+      border-right:0px
+    }
+    /* Music Player */
+    .img-container {
+      width: 8em;
+      height: 8em;
+    }
+    .modal {
+      border: 1px solid;
+      min-width: 1em;
+      width: 95vw;
+      min-height: 1em;
+      height: 95vh;
+      background-color: rgba(85, 65, 104,0.95);
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      margin: 0em;
+  }
+    .modal-album img{
+     min-width: 1em;
+     width: 10em;
+    }
+    .Main-banner-background{
+      min-height: 5vh;
+      height: 5em;
+    }
+
+
+    }
+
+  @media screen and (min-width: 540px) and (max-width: 1544px) {
+    .Nav a {
+      font-size: 2em;
+    }
+
+    }
+    
+
+    
+     @media all and (min-width: 900px) {
+   
+
+    
+    }

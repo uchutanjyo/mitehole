@@ -10,9 +10,7 @@ const Contact = () => {
    < Main>
 
       <h1 className='header'> Contact Mite</h1>
-      <Paragraph>
-        email: mitehole@gmail.com
-      </Paragraph>
+       <h1 className='contactemail'>email: mitehole@gmail.com</h1> for collaboration, booking, free items and more.
     </Main>
   );
 };
