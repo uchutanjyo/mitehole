@@ -31,7 +31,7 @@ const MusicPlayer = () => {
     const [songArt, setSongArt] = useState(null)
     const [songDate, setSongDate] = useState('')
 
-    const [trackProgress, setTrackProgress] = useState('0')
+    const [trackProgress, setTrackProgress] = useState('0:00')
     const [progressPercent, setProgressPercent] = useState('0')
 
 
@@ -85,16 +85,17 @@ const getAudio = () => {
     const startTimer = () => {
         // Clear any timers already running
         clearInterval(intervalRef.current);
-  console.log(audioRef.current.currentTime)
        intervalRef.current = setInterval(() => {
             if (isPlaying) {
-            setTrackProgress(Math.floor(audioRef.current.currentTime));
+        const currentTime = audioRef.current.currentTime;
+         const currentMinutes = Math.floor(currentTime / 60);
+         let currentSeconds = Math.floor(currentTime % 60);
+         if (currentSeconds < 10) {
+             currentSeconds = `0${currentSeconds}`;
+         }
+            setTrackProgress( `${currentMinutes}:${currentSeconds}`
+            );
 
-            // if (duration != null) {
-
-            //     setProgressPercent((trackProgress/duration) * 100)
-            //     console.log(progressPercent)
-            // }
         
        }
 
@@ -116,8 +117,7 @@ const pauseSong = () => {
 
     
 useEffect( () => {
- 
-        if (audioRef != null && isPlaying) {
+        if (isPlaying) {
             startTimer()
             audioRef.current.play();
         }
