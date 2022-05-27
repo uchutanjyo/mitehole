@@ -6,6 +6,14 @@ import unreleased1 from '../mp3s/unreleased-1.mp3'
 // Music player
 const songs = [
     {
+        name: 'unreleased-1',
+        displayName: 'Unreleased-1',
+        artist: 'Mite',
+        date: '2020',
+        file: unreleased1,
+        albumArt: 'https://f4.bcbits.com/img/a2170320661_2.jpg'
+    },
+    {
         name: 'wami',
         displayName: 'Q-Q Birds - Clean',
         artist: 'Mite',
@@ -13,18 +21,6 @@ const songs = [
         file: wami,
         albumArt: 'https://f4.bcbits.com/img/a1756680641_2.jpg'
     },
-    
-    {
-        name: 'unreleased-1',
-        displayName: 'Unreleased-1',
-        artist: 'Mite',
-        date: '2020',
-        file: unreleased1,
-        albumArt: 'albums/thumbnails/hole.jpg'
-
-
-    },
-
 
     ]
 
