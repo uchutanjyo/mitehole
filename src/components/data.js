@@ -110,6 +110,23 @@ export default [
 
     },
 
-    
+    {
+      id: 15,
+      title: 'from nothing / gap',
+      release: 2022,
+      info: 'synth-rock and bug-tribal, mite-style.',
+      image: 'https://f4.bcbits.com/img/a2884738259_2.jpg'
+  
+  },
+
+  {
+    id: 16,
+    title: 'centre of the cyclone',
+    release: 2022,
+    info: 'not based on the John C Lilly(?). dark ambient, enjoyed by mite itself on many occasions.',
+    image: 'https://f4.bcbits.com/img/a3868055846_2.jpg'
+
+},
+
     
 ]
