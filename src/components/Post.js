@@ -1,14 +1,10 @@
-import React from 'react';
+import React from "react";
 
-
-
-
-
-const Post = ({id, date, children}) => {
+const Post = ({ id, date, children }) => {
   return (
-    <div className='post'>
-      <h5 className='Post-date'>{date}</h5>
-{children}
+    <div className="post">
+      <h5 className="Post-date">{date}</h5>
+      {children}
     </div>
   );
 };

@@ -116,7 +116,6 @@ export default [
       release: 2022,
       info: 'synth-rock and bug-tribal, mite-style.',
       image: 'https://f4.bcbits.com/img/a2884738259_2.jpg'
-  
   },
 
   {
@@ -127,6 +126,13 @@ export default [
     image: 'https://f4.bcbits.com/img/a3868055846_2.jpg'
 
 },
+{
+  id: 17,
+  title: 'hivemind',
+  release: 2022,
+  info: 'the magnum opus..actually no.. dramatic synth and noise,  evil bee carnival and noise. noise, and noise.',
+  image: 'https://f4.bcbits.com/img/a2279994935_2.jpg'
 
-    
+},
+
 ]

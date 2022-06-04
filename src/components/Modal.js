@@ -1,18 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
-const Modal = ({show, onClose, album, children}) => {
-
-    if (!show) {
-        return null
-    }
+const Modal = ({ show, onClose, album, children }) => {
+  if (!show) {
+    return null;
+  }
   return (
-    <div className='modal'>
-    {children} 
-{album}
-</div>
+    <div className="modal">
+      {children}
+      {album}
+    </div>
   );
 };
 
 export default Modal;
-
-
