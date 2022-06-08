@@ -145,17 +145,19 @@ const MusicPlayer = () => {
     }
   }, [audioRef, songIndex]);
 
-  // const setProgressBar = (e) => {
-  //     console.log('dwsf')
-  //     const width = e.clientX;
-  //     const clickX = e.nativeEvent.offsetX;
+  const setProgressBar = (e) => {
+      console.log('dwsf')
+      const width = e.clientX;
+      const clickX = e.nativeEvent.offsetX;
+      console.log(width, clickX)
+
   //     console.log(audioRef)
   //     const {duration} = audioRef;
   // const ok = (clickX / width) * duration;
 
-  //     setTrackProgress(ok)
+      // setTrackProgress(ok)
 
-  // }
+  }
   return (
     <>
       <div className="player-container">
@@ -169,12 +171,13 @@ const MusicPlayer = () => {
         <h3 id="artist">
           {songArtist} - {songDate}
         </h3>
-        <div className="progress-container" id="progress-container">
+        <div className="progress-container" id="progress-container" onClick={setProgressBar}>
           <div
             className="progress"
             id="progress"
             style={{ width: `${progressPercent}%` }}
-            ref={progressBar}
+            // ref={progressBar}
+            
           ></div>
           <div className="duration-wrapper">
             <span className="current-time">{trackProgress}</span>
